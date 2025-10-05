@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff5e6;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.bold {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6a04d;
+  padding: 15px 50px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff5e6;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 20px;
+  padding: 20px 50px;
+  margin-top: 20px;
+}
+
+.sidebar-left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-left a {
+  text-decoration: none;
+  color: #ea580c;
+  font-size: 18px;
+}
+
+.sidebar-left a:hover {
+  color: #ff5900;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-post {
+  background-color: #fff;
+  border: 2px solid #f6a04d;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-post textarea {
+  resize: none;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #f6a04d;
+  border-radius: 6px;
+}
+
+.create-post button {
+  align-self: flex-end;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #f6a04d;
+  color: #fff5e6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-post button:hover {
+  background-color: #ea580c;
+}
+
+.post {
+  background-color: #fff;
+  border: 2px solid #f6a04d;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.post-header {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.sidebar-right {
+  background-color: #fff;
+  border: 2px solid #f6a04d;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.sidebar-right h3 {
+  margin-bottom: 10px;
+  color: #f6a04d;
+}
+
+.sidebar-right ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  color: #ea580c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ea580c;
+  font-size: 16px;
+  margin-top: 30px;
+  border-top: 1px solid #f6a04d;
+}

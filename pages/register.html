@@ -3,7 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đâng ký</title>
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1>Đăng ký</h1>
+    <form>
+      <div class="container">
+        <div class="form-row">
+          <div class="label">Tên đăng nhập</div>
+          <input
+            class="inp"
+            type="text"
+            name="username"
+            placeholder="Nhập username"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="label">Email</div>
+          <input
+            class="inp"
+            type="email"
+            name="email"
+            placeholder="Nhập email"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="label">Mật khẩu</div>
+          <input
+            class="inp"
+            type="password"
+            name="password"
+            placeholder="Nhập mật khẩu"
+          />
+          <button type="button" onclick="togglePassword()">👁</button>
+        </div>
+
+        <div class="form-row">
+          <div class="label">Nhập lại mật khẩu</div>
+          <input
+            class="inp"
+            type="password"
+            name="re-password"
+            placeholder="Nhập lại mật khẩu"
+          />
+          <button type="button" onclick="togglePassword()">👁</button>
+        </div>
+
+        <div class="form-row">
+          <div class="label">Giới tính</div>
+          <div class="gender-options">
+            <label><input type="radio" name="gender" value="male" /> Nam</label>
+            <label
+              ><input type="radio" name="gender" value="female" /> Nữ</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" /> Khác</label
+            >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="label">Ngày sinh</div>
+          <input class="inp" type="date" name="dob" />
+        </div>
+
+        <div class="btn-submit">
+          <button class="button" type="button">Đăng ký</button>
+        </div>
+      </div>
+
+      <a href="./login.html" class="register">Bạn đã có tài khoản?</a>
+    </form>
+    <footer>
+      <p>OrangeBook © 2025</p>
+    </footer>
+    <script src="../jvs/register.js"></script>
+  </body>
 </html>

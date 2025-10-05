@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">OrangeBook</div>
+      <nav>
+        <a class="bold" href="home.html">Trang chủ</a>
+        <a href="friends.html">Bạn bè</a>
+        <a href="chatbox.html">Nhắn tin</a>
+        <a href="setting.html">Cài đặt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="feed">
+        <div class="create-post">
+          <textarea placeholder="Bạn đang nghĩ gì?"></textarea>
+
+          <div class="upload-container">
+            <div class="image-box" id="imageBox">
+              <p>Chưa có ảnh</p>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" />
+          </div>
+          <button>Đăng</button>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <strong>Nguyễn Văn Mạnh</strong> • 1 giờ trước
+          </div>
+          <div class="post-content">Hôm nay trời thật đẹp ☀️</div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <strong>Trần Thị Hồng</strong> • 2 giờ trước
+          </div>
+          <div class="post-content">
+            Mình mới tham gia MyBook, xin chào mọi người 👋
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar-right">
+        <h3>Bạn bè trực tuyến</h3>
+        <ul>
+          <li>David Johnson</li>
+          <li>Phan Hảo</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>OrangeBook © 2025</p>
+    </footer>
+  </body>
+</html>

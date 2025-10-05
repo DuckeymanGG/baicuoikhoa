@@ -16,23 +16,29 @@
     <h1>Đăng nhập</h1>
     <form>
       <div class="container">
-        <div class="name">Tên đăng nhập</div>
-        <input class="inp" type="name" name="username" placeholder="Nhập username"></input>
-            <div class="password">Mật khẩu</div>
-        <div class="passkey">
-            <input class="inp" type="password" name="username" placeholder="Nhập mật khẩu"></input>
-            <button type="unseen-button" onclick="togglePassword()">👁</button>
+        <div class="form-row">
+            <div class="name">Tên đăng nhập</div>
+            <input class="inp" type="name" name="username" placeholder="Nhập username"></input>
         </div>
+        <div class="form-row">
+            <div class="password">Mật khẩu</div>
+            <input id="inputID" class="inp" type="password" name="username" placeholder="Nhập mật khẩu"></input>
+            <button type="button" class="toggle-btn" onclick="togglePassword('password', this)">👁</button>
+        </div>
+        <div class="form-row">
             <div class="re-password">Nhập lại mật khẩu</div>
-        <div class="passkey">
-            <input class="inp" type="password" name="username" placeholder="Nhập lại mật khẩu"></input>
-            <button type="unseen-button" onclick="togglePassword()">👁</button>
+            <input id="inputID" class="inp" type="password" name="username" placeholder="Nhập lại mật khẩu"></input>
+            <button type="button" class="toggle-btn" onclick="togglePassword('password', this)">👁</button>
         </div>
         <div class="btn-submit">
             <button class="button" type="button">Đăng nhập</button>
         </div>
       </div>
+      <a href="./register.html" class="register">Bạn chưa có tài khoản?</a>
     </form>
+      <footer>
+          <p>OrangeBook © 2025</p>
+      </footer>
     <script src="../jvs/login.js"></script>
   </body>
 </html>

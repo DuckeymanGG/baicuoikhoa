@@ -1,0 +1,163 @@
+body {
+  background-color: #fff5e6;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #f6a04d;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #f6a04d;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 10px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #f6a04d;
+}
+
+input:checked + .slider::before {
+  transform: translateX(36px);
+}
+
+.button {
+  height: 45px;
+  width: 250px;
+  border: 3px solid #f6a04d;
+  border-radius: 5px;
+  background-color: #f6a04d;
+  color: #fff5e6;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ea580c;
+}
+
+.btn-submit {
+  margin: 30px auto 0;
+}
+
+.register {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ea580c;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.register:hover {
+  color: #ff5900;
+}
+
+.change {
+  text-align: center;
+  text-decoration: none;
+  color: #ea580c;
+}
+
+.change:hover {
+  color: #ff5900;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ea580c;
+  font-size: 16px;
+  margin-top: 30px;
+  border-top: 1px solid #f6a04d;
+}
+
+.bold {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6a04d;
+  padding: 15px 50px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff5e6;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
