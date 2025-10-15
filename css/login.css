@@ -31,7 +31,7 @@ form {
 
 .inp {
   height: 40px;
-  width: 670px;
+  width: 100%;
   font-size: 20px;
   border: 3px solid #f6a04d;
   border-radius: 5px;
@@ -78,4 +78,19 @@ footer {
   font-size: 16px;
   margin-top: 30px;
   border-top: 1px solid #f6a04d;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper > .toggleBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+#Form-Login {
+  height: 80vh;
 }

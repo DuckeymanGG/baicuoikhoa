@@ -1,13 +1,4 @@
-const users = JSON.parse(localStorage.getItem("users")) || [
-  {
-    username: "DucAnhPham",
-    password: "ducanh123",
-  },
-  {
-    username: "AdminOrange",
-    password: "test567",
-  },
-];
+const users = JSON.parse(localStorage.getItem("users")) || [];
 
 const form = document.getElementById("Form-Login");
 form.addEventListener("submit", (e) => {
@@ -30,11 +21,12 @@ form.addEventListener("submit", (e) => {
 
   if (validate()) {
     const Userfind = users.find(
-      (users) => users.username === username && users.password === password
+      (users) => users.username === username && users.pass === password
     );
     if (Userfind) {
+      localStorage.setItem("auth", username);
       alert("Đăng nhập thành công!");
-      window.location.href = "home.html";
+      window.location.href = "./pages/home.html";
     } else {
       alert("Sai Username hoặc Password!");
     }
